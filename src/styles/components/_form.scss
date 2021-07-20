@@ -1,0 +1,9 @@
+@use "../abstracts/variables";
+
+input, textarea{
+    background: $color-prim-comp;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 2px solid $color-prim;
+    color: #f2f2f2;
+}

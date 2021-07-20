@@ -1,0 +1,25 @@
+#skills{
+    padding: 30px 20px;
+    background: #07083E;
+  }
+  #skills h3{
+    text-align: center;
+  }
+  #skills ul{
+    margin: 40px 0;
+  }
+  #skills li{
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+    grid-column: span 4;
+    text-align: center;
+  }
+  #skills img{
+    height: 80px;
+    margin: 10px auto;
+  }
+  #skills p{
+    text-align: center;
+    margin: 0 20px;
+  }
+  

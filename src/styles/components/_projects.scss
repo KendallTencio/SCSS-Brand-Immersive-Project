@@ -1,0 +1,16 @@
+.projects{
+    margin: 20px 0;
+  }
+  .projects a{
+    grid-column: 1/9;
+    display: flex;
+    margin: 20px 0
+  }
+  .projects a *{
+    margin: 0 20px;
+    max-width: 40%;
+    align-self: center;
+  }
+  .projects h4{
+    color: #9994f7
+  }
