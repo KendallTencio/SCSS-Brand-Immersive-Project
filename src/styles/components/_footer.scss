@@ -1,6 +1,6 @@
 @use "../abstracts/variables";
 
-footer{
+.footer{
     padding: 30px 20px;
     background-color: $color-four;
     background-size: 40%;
@@ -11,16 +11,10 @@ footer{
     justify-content: center;
     align-items: center;
 
-    &.copyright{
+    &__copyright{
       font-size: 0.8em;
       padding: 0px 0px 10px 0px;
     }
-
-    &.social{
-      display: flex;
-      justify-content: space-around;
-    }
-
     li{
       margin: 0 6px;
     }

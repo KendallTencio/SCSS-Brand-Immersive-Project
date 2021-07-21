@@ -5,34 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Costa Rica</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Once Upon a Trip</title>
   </head>
   <body>
     <header>
+      <!-- Navbar -->
       <nav id="is" class="site-nav flex-container">
-        <div class="cr-text">
-          Color
-          <h1 class="nav-heading">Costa Rica</h1>
-        </div>
-        <ul>
-          <li><a href="#provinces" class="nav-heading">Provinces</a></li>
-          <li><a href="#packages" class="nav-heading">Packages</a></li>
-          <li><a href="#contact" class="nav-heading">Contact</a></li>
-          <li>
-            <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </li>
+          <h1 class="cr-text nav-heading">Once Upon a Trip</h1>
+        <ul role="tablist" id="js-tabs">
+          <li role="presentation"><a href="#provinces" class="nav-heading">Provinces</a></li>
+          <li role="presentation"><a href="#packages" class="nav-heading">Packages</a></li>
+          <li role="presentation"><a href="#contact" class="nav-heading">Contact</a></li>
         </ul>
+        </a>
       </nav>
     </header>
 
     <main>
+      <div class="upperbar"></div>
 
       <!-- Banner -->
-      <div class="banner cr-text">
-        <h2>Costa Rica<br/> & Stuff</h2>
-        <a href="#provinces" class="button button--mainbutton"> View places</a>
+      <div class="banner ">
+        <h2>Once Upon a Trip<br/> in Costa Rica</h2>
+        <a href="#provinces" class="button button--mainbutton">Let's meet the country!</a>
       </div>
 
       <video autoplay muted loop class="video">
@@ -40,44 +36,60 @@
         Your browser does not support HTML5 video.
       </video>
 
-      <div class="containersec">
+      <!-- Provinces -->
+      <div class="container-sec">
         <section id="provinces" class="provinces-container">
           <h3 class="heading">Provinces</h3>
           <div class="provinces flex-container">
-            <a href="" class="provinces__card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img class="image" src="./assets/images/Provinces/San.png" alt="1">
-                </div>
-                <div class="card-back">
-                  <img class="image"  src="./assets/images/Provinces/Ala.png" alt="2">
-                </div>
-              </div>
-            </a>
-            <a href="">
-              <img class="image" src="./assets/images/Provinces/San.png" alt="1">
-            </a>
-            <a href="">
-              <img class="image"  src="./assets/images/Provinces/Ala.png" alt="2">
-            </a>
-            <a href="">
-              <img class="image"  src="./assets/images/Provinces/Car.png" alt="3">
-            </a>
-            <a href="">
-              <img class="image" src="./assets/images/Provinces/Her.png" alt="1">
-            </a>
-            <a href="">
-              <img class="image"  src="./assets/images/Provinces/Pun.png" alt="3">
-            </a>
-            <a href="">
-              <img class="image"  src="./assets/images/Provinces/Gua.png" alt="3">
-            </a>
-            <a href="">
-              <img class="image"  src="./assets/images/Provinces/Lim.png" alt="2">
-            </a>
+            <!--
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <a href="">
+                <div class="card">
+                <img class="image" src="./assets/images/Provinces/San.png" alt="1">   
+                <img src="./assets/images/Teather.png" class="img-top" alt="11">    
+              </div>       
+              </a>
+            </div>
+            -->
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <a href="">
+                <img class="image"  src="./assets/images/Provinces/San.png" alt="2">
+              </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <a href="">
+                <img class="image"  src="./assets/images/Provinces/Ala.png" alt="2">
+              </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <a href="">
+                <img class="image"  src="./assets/images/Provinces/Car.png" alt="3">
+              </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <a href="">
+                <img class="image" src="./assets/images/Provinces/Her.png" alt="1">
+              </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <a href="">
+                <img class="image"  src="./assets/images/Provinces/Pun.png" alt="3">
+              </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <a href="">
+                <img class="image"  src="./assets/images/Provinces/Gua.png" alt="3">
+              </a>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500">
+              <a href="">
+                <img class="image"  src="./assets/images/Provinces/Lim.png" alt="2">
+              </a>
+            </div>
           </div>
         </section>
 
+        <!-- Offer packages-->
         <section id="packages" class="cardcontainer">
           <h3 class="heading">Packages</h3>
           <div class="cardwrapper">
@@ -96,23 +108,33 @@
           </div>
         </section>
 
+        <!-- Contact form-->
         <section id="contact" class="contact">
-          <h3>Contact us</h3>
+          <h3 class="heading">Contact us</h3>
           <form>
             <input type="text" placeholder="Name">
             <input type="text" placeholder="Email">
             <textarea placeholder="Message"></textarea>
-            <button class="button button-form">Send</button>
+            <button class="button button--form">Send</button>
           </form>
         </section>
     </div>
     </main>
 
-    <footer>
-       <p class="copyright">Copyright 2021 - Costa Rica</p>
-       <ul class="social">
-       </ul>
+    <button onclick="goToTop()" class="button button--go-top" id="gotobtn">Up</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+       <p class="footer__copyright">Copyright 2021 - Once Upon a Trip</p>
     </footer>
+
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    
+    <!-- Top Script Button -->
+    <script type="text/javascript" src="./index.js"></script>
+    <script>goToTop();</script>
 
   </body>
   </html>

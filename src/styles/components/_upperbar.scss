@@ -1,0 +1,23 @@
+@use "../abstracts/variables";
+@use "../abstracts/breakpoints" as media;
+
+.upperbar{
+    background-color: $color-prim;
+    width: 100%;
+    height: 10vh;
+
+    @include media.query(">=sm") {
+        width: 100%;
+        height: 10vh;
+    }
+    
+    @include media.query(">=md") {
+        width: 100%;
+        height: 20vh;
+    }
+
+    @include media.query(">=lg") {
+        width: 100%;
+        height: 20vh;
+    }
+}

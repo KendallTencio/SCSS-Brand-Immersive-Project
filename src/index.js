@@ -1,10 +1,15 @@
 import "./styles/main.scss";
 
-function burgerMenu() {
-  var x = document.getElementById("nav");
-  if (x.className === "site-nav") {
-    x.className += " responsive";
-  } else {
-    x.className = "site-nav";
-  }
+var goTopBtn = document.getElementById("gotobtn");
+
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) goTopBtn.style.display = "block"; 
+  else goTopBtn.style.display = "none";
+}
+
+function goToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }

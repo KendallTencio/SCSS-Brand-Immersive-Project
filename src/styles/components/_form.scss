@@ -6,4 +6,8 @@ input, textarea{
     border-radius: 10px;
     border: 2px solid $color-prim;
     color: #f2f2f2;
+
+    &::-moz-placeholder{
+        color: $color-sec;
+    }
 }

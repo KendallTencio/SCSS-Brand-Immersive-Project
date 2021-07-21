@@ -9,24 +9,33 @@
     font-size: 30px;
     width: 100vw;
     height: 100vh;
-    background-image: url("../../assets/images/CostaRicaMapTrans.svg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: $color-prim-comp;
-    text-shadow: 2.5px 2.5px $color-four;
+    text-shadow: 2.2px 2.2px $color-four;
 
     @include media.query(">=sm") {
         font-size: 30px;
+        background-image: none;
       }
   
-      @include media.query(">=md") {
-        font-size: 50px;
-        text-shadow: 4px 4px $color-four;
-      }
-  
-      @include media.query(">=lg") {
-        font-size: 60px;
-      }
+    @include media.query(">600px", "<1023px") {
+      background-image: url("../../assets/images/CostaRicaMapTrans.svg");
+      font-size: 50px;
+      text-shadow: 2.2px 2.2px $color-four;
+    }
+
+    @include media.query(">=md") {
+      background-image: url("../../assets/images/CostaRicaMapTrans.svg");
+      font-size: 50px;
+      text-shadow: 2.2px 2.2px $color-four;
+    }
+
+    @include media.query(">=lg") {
+      background-image: url("../../assets/images/CostaRicaMapTrans.svg");
+      font-size: 60px;
+    }
   }
 
 .video{
@@ -36,4 +45,5 @@
     min-width: 100%; 
     min-height: 100%;
     z-index: -1;
+    filter: brightness(60%);
 }
