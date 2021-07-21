@@ -1,0 +1,50 @@
+@use "../abstracts/breakpoints" as media;
+  
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include media.query(">=sm") {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include media.query(">700px", "<1023px") {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    @include media.query(">=md") {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    @include media.query(">=lg") {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  
+
+  /*
+    .grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    box-sizing: border-box;
+  }
+  */

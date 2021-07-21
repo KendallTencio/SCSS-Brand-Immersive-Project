@@ -4,38 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Costa Rica</title>
   </head>
   <body>
-    <!-- https://turismoglobal.com/wp-content/uploads/2020/05/playa-tropical_74190-188.jpg -->
     <header>
-      <nav class="site-nav grid">
+      <nav id="is" class="site-nav flex-container">
         <div class="cr-text">
           Color
-          <h1>Costa Rica</h1>
+          <h1 class="nav-heading">Costa Rica</h1>
         </div>
         <ul>
-          <li><a href="#portfolio">Provinces</a></li>
-          <li><a href="#skills">Packages</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#provinces" class="nav-heading">Provinces</a></li>
+          <li><a href="#packages" class="nav-heading">Packages</a></li>
+          <li><a href="#contact" class="nav-heading">Contact</a></li>
+          <li>
+            <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <!--
-      <section class="welcome">
-        <div class="welcome-text">
-          <h2>Weekly offer</h2>
-          <a href="#portfolio" class="button"> I want it!</a>
-        </div>
-      </section>
-      -->
 
-        <!-- Banner -->
+      <!-- Banner -->
       <div class="banner cr-text">
         <h2>Costa Rica<br/> & Stuff</h2>
-        <a href="#portfolio" class="button"> View places</a>
+        <a href="#provinces" class="button button--mainbutton"> View places</a>
       </div>
 
       <video autoplay muted loop class="video">
@@ -44,48 +41,70 @@
       </video>
 
       <div class="containersec">
-      <section id="portfolio" class="portfolio">
-        <h3>Provinces</h3>
-        <div class="projects grid">
-          <a href="">
-            <img class="image" src="https://cdn1.matadornetwork.com/blogs/1/2019/05/Majestic-waterfall-in-the-rainforest-jungle-of-Costa-Rica-1200x854.jpg" alt="1">
-          </a>
-          <a href="">
-            <img class="image"  src="https://cdn1.matadornetwork.com/blogs/1/2019/05/Majestic-waterfall-in-the-rainforest-jungle-of-Costa-Rica-1200x854.jpg" alt="2">
-          </a>
-          <a href="">
-            <img class="image"  src="https://cdn1.matadornetwork.com/blogs/1/2019/05/Majestic-waterfall-in-the-rainforest-jungle-of-Costa-Rica-1200x854.jpg" alt="3">
-          </a>
-        </div>
-      </section>
+        <section id="provinces" class="provinces-container">
+          <h3 class="heading">Provinces</h3>
+          <div class="provinces flex-container">
+            <a href="" class="provinces__card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img class="image" src="./assets/images/Provinces/San.png" alt="1">
+                </div>
+                <div class="card-back">
+                  <img class="image"  src="./assets/images/Provinces/Ala.png" alt="2">
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <img class="image" src="./assets/images/Provinces/San.png" alt="1">
+            </a>
+            <a href="">
+              <img class="image"  src="./assets/images/Provinces/Ala.png" alt="2">
+            </a>
+            <a href="">
+              <img class="image"  src="./assets/images/Provinces/Car.png" alt="3">
+            </a>
+            <a href="">
+              <img class="image" src="./assets/images/Provinces/Her.png" alt="1">
+            </a>
+            <a href="">
+              <img class="image"  src="./assets/images/Provinces/Pun.png" alt="3">
+            </a>
+            <a href="">
+              <img class="image"  src="./assets/images/Provinces/Gua.png" alt="3">
+            </a>
+            <a href="">
+              <img class="image"  src="./assets/images/Provinces/Lim.png" alt="2">
+            </a>
+          </div>
+        </section>
 
-      <section id="skills" class="cardcontainer">
-        <h3>Packages</h3>
-        <div class="cardwrapper">
-          <article class="paintcard">
-            <h2 class="paintcard__title">Title 1</h2>
-            <img src="https://cdn1.matadornetwork.com/blogs/1/2019/05/Majestic-waterfall-in-the-rainforest-jungle-of-Costa-Rica-1200x854.jpg" alt="Farm Garden Painting" class="paintcard__image" />
-          </article>
-          <article class="paintcard">
-            <h2 class="paintcard__title">Title 2</h2>
-            <img src="https://cdn1.matadornetwork.com/blogs/1/2019/05/Majestic-waterfall-in-the-rainforest-jungle-of-Costa-Rica-1200x854.jpg" alt="Adele painting" class="paintcard__image" />
-          </article>
-          <article class="paintcard">
-            <h2 class="paintcard__title">Title 3</h2>
-            <img src="https://cdn1.matadornetwork.com/blogs/1/2019/05/Majestic-waterfall-in-the-rainforest-jungle-of-Costa-Rica-1200x854.jpg" alt="Death and life painting" class="paintcard__image" />
-          </article>
-        </div>
-      </section>
+        <section id="packages" class="cardcontainer">
+          <h3 class="heading">Packages</h3>
+          <div class="cardwrapper">
+            <article class="paintcard">
+              <h4 class="paintcard__title">Beach Time</h4>
+              <img src="https://www.fodors.com/wp-content/uploads/2019/10/BestBeachesInCostaRica__HERO_iStock-1003143496.jpg" alt="Farm Garden Painting" class="paintcard__image" />
+            </article>
+            <article class="paintcard">
+              <h4 class="paintcard__title">Volcanoes and mountains</h4>
+              <img src="https://cdn.kimkim.com/files/a/article_images/images/b7f5be99a514110681ddbb5eaf154553b6c9de18/big-275572a22ab809986b10acd0df747e2e.jpg" alt="Adele painting" class="paintcard__image" />
+            </article>
+            <article class="paintcard">
+              <h4 class="paintcard__title">Landmarks sightseeing</h4>
+              <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/89/35/37.jpg" alt="Death and life painting" class="paintcard__image" />
+            </article>
+          </div>
+        </section>
 
-      <section id="contact" class="contact">
-        <h3>Contact us</h3>
-        <form>
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Email">
-          <textarea placeholder="Message"></textarea>
-          <button class="button">Send</button>
-        </form>
-      </section>
+        <section id="contact" class="contact">
+          <h3>Contact us</h3>
+          <form>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button class="button button-form">Send</button>
+          </form>
+        </section>
     </div>
     </main>
 

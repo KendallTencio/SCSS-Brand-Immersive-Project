@@ -4,18 +4,6 @@
 body{
     font-size: rem(16px);
     padding-top: 0px;
-
-    @include media.query(">=sm") {
-
-    }
-
-    @include media.query(">=md") {
-
-    }
-
-    @include media.query(">=lg") {
-
-    }
 }
 
 .containersec{

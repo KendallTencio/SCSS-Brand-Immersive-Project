@@ -41,14 +41,14 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 20%;
   padding: 0.625rem 1rem;
   align-items: center;
   justify-content: flex-start;
   background-color: #c8c3b4;
   box-shadow: 0.3125rem 0.3125rem 5px;
   transition: transform 0.3s;
-  border-left: 30px solid $color-thi;
+  border-left: 20px solid $color-thi;
 
   border-radius: 10px;
 
@@ -59,6 +59,23 @@
   &__image {
     width: 90%;
     border-radius: 5px;
+  }
+
+  &__title{
+    font-size: rem(15px);
+    color: $color-prim;
+
+    @include media.query(">=sm") {
+      font-size: rem(15px);
+    }
+  
+    @include media.query(">=md") {
+      font-size: rem(20px);
+    }
+  
+    @include media.query(">=lg") {
+      font-size: rem(25px);
+    }
   }
 
 }

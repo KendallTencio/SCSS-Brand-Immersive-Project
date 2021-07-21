@@ -14,4 +14,12 @@
         color: rgb(214, 214, 214);
         background: $color-thi;
     }
+
+    &--mainbutton{
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    &--form{
+        background: none;
+    }
 }

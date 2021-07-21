@@ -8,6 +8,7 @@
 @import "./base/base";
 
 // COMPONENTS
+@import "./components/headings";
 @import "./components/body";
 @import "./components/image";
 @import "./components/button";
@@ -15,11 +16,11 @@
 @import "./components/nav";
 @import "./components/contact";
 @import "./components/form.scss";
-@import "./components/skills.scss";
+@import "./components/package.scss";
 @import "./components/footer.scss";
-@import "./components/portfolio";
-@import "./components/projects.scss";
-@import "./components/grid";
+@import "./components/provinces";
+@import "./components/provinces-container";
+@import "./components/flex-container";
 @import "./components/welcome";
 @import "./components/banner";
 
