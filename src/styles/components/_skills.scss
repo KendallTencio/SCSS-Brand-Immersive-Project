@@ -1,25 +1,65 @@
-#skills{
-    padding: 30px 20px;
-    background: #07083E;
-  }
-  #skills h3{
+@use "../abstracts/variables";
+@use "../abstracts/breakpoints" as media;
+
+.cardcontainer{
+  background-color: $color-sec;
+  h3{
+    color: $color-thi;
     text-align: center;
   }
-  #skills ul{
-    margin: 40px 0;
+}
+
+.cardwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  background: $color-sec;
+
+  @include media.query(">=sm") {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  #skills li{
-    padding: 10px;
-    background: rgba(0,0,0,0.2);
-    grid-column: span 4;
-    text-align: center;
+
+  @include media.query(">=md") {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
-  #skills img{
-    height: 80px;
-    margin: 10px auto;
+
+  @include media.query(">=lg") {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
-  #skills p{
-    text-align: center;
-    margin: 0 20px;
+}
+
+.paintcard {
+  margin: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 0.625rem 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #c8c3b4;
+  box-shadow: 0.3125rem 0.3125rem 5px;
+  transition: transform 0.3s;
+  border-left: 30px solid $color-thi;
+
+  border-radius: 10px;
+
+  &:hover {
+    transform: scale(1.1);
   }
-  
+
+  &__image {
+    width: 90%;
+    border-radius: 5px;
+  }
+
+}
+

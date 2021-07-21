@@ -1,17 +1,23 @@
 @use "../abstracts/breakpoints" as media;
+@use "../abstracts/variables";
 
 body{
     font-size: rem(16px);
+    padding-top: 0px;
 
     @include media.query(">=sm") {
-        font-size: rem(30px);
+
     }
 
     @include media.query(">=md") {
-        font-size: rem(40px);
+
     }
 
     @include media.query(">=lg") {
-        font-size: rem(60px);
+
     }
+}
+
+.containersec{
+    background-color: $color-sec;
 }

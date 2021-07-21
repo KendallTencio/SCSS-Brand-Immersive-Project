@@ -10,66 +10,75 @@
     <!-- https://turismoglobal.com/wp-content/uploads/2020/05/playa-tropical_74190-188.jpg -->
     <header>
       <nav class="site-nav grid">
-        <h1>Costa Rica</h1>
+        <div class="cr-text">
+          Color
+          <h1>Costa Rica</h1>
+        </div>
         <ul>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Provinces</a></li>
+          <li><a href="#skills">Packages</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <!--
       <section class="welcome">
         <div class="welcome-text">
-          <h2>Costa Rica<br/> & Stuff</h2>
-          <p class="leading">Texto</p>
-          <a href="#portfolio" class="button"> View my work</a>
-        </div>
-        <div class="welcome-img">
-          <img src="https://turismoglobal.com/wp-content/uploads/2020/05/playa-tropical_74190-188.jpg" alt="">
+          <h2>Weekly offer</h2>
+          <a href="#portfolio" class="button"> I want it!</a>
         </div>
       </section>
+      -->
 
-      <section id="portfolio">
-        <h3>Some things</h3>
+        <!-- Banner -->
+      <div class="banner cr-text">
+        <h2>Costa Rica<br/> & Stuff</h2>
+        <a href="#portfolio" class="button"> View places</a>
+      </div>
+
+      <video autoplay muted loop class="video">
+        <source src="./assets/videos/crnature.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <div class="containersec">
+      <section id="portfolio" class="portfolio">
+        <h3>Provinces</h3>
         <div class="projects grid">
           <a href="">
-            <img class="image" src="https://turismoglobal.com/wp-content/uploads/2020/05/playa-tropical_74190-188.jpg" alt="1">
-            <h4>Place 1</h4>
+            <img class="image" src="https://cdn1.matadornetwork.com/blogs/1/2019/05/Majestic-waterfall-in-the-rainforest-jungle-of-Costa-Rica-1200x854.jpg" alt="1">
           </a>
           <a href="">
-            <img class="image"  src="https://turismoglobal.com/wp-content/uploads/2020/05/playa-tropical_74190-188.jpg" alt="2">
-            <h4>Place 2</h4>
+            <img class="image"  src="https://cdn1.matadornetwork.com/blogs/1/2019/05/Majestic-waterfall-in-the-rainforest-jungle-of-Costa-Rica-1200x854.jpg" alt="2">
           </a>
           <a href="">
-            <img class="image"  src="https://turismoglobal.com/wp-content/uploads/2020/05/playa-tropical_74190-188.jpg" alt="3">
-            <h4>Place 3</h4>
+            <img class="image"  src="https://cdn1.matadornetwork.com/blogs/1/2019/05/Majestic-waterfall-in-the-rainforest-jungle-of-Costa-Rica-1200x854.jpg" alt="3">
           </a>
         </div>
       </section>
 
-      <section id="skills">
-        <h3>Some other things</h3>
-        <ul class="grid">
-          <li>
-            <img class="image" src="https://turismoglobal.com/wp-content/uploads/2020/05/playa-tropical_74190-188.jpg" alt="1">
-            <h4>Thing 1</h4>
-          </li>
-          <li>
-            <img class="image" src="https://turismoglobal.com/wp-content/uploads/2020/05/playa-tropical_74190-188.jpg" alt="2">
-            <h4>Thing 2</h4>
-          </li>
-          <li>
-            <img class="image" src="https://turismoglobal.com/wp-content/uploads/2020/05/playa-tropical_74190-188.jpg" alt="3">
-            <h4>Thing 3</h4>
-          </li>
-        </ul>
+      <section id="skills" class="cardcontainer">
+        <h3>Packages</h3>
+        <div class="cardwrapper">
+          <article class="paintcard">
+            <h2 class="paintcard__title">Title 1</h2>
+            <img src="https://cdn1.matadornetwork.com/blogs/1/2019/05/Majestic-waterfall-in-the-rainforest-jungle-of-Costa-Rica-1200x854.jpg" alt="Farm Garden Painting" class="paintcard__image" />
+          </article>
+          <article class="paintcard">
+            <h2 class="paintcard__title">Title 2</h2>
+            <img src="https://cdn1.matadornetwork.com/blogs/1/2019/05/Majestic-waterfall-in-the-rainforest-jungle-of-Costa-Rica-1200x854.jpg" alt="Adele painting" class="paintcard__image" />
+          </article>
+          <article class="paintcard">
+            <h2 class="paintcard__title">Title 3</h2>
+            <img src="https://cdn1.matadornetwork.com/blogs/1/2019/05/Majestic-waterfall-in-the-rainforest-jungle-of-Costa-Rica-1200x854.jpg" alt="Death and life painting" class="paintcard__image" />
+          </article>
+        </div>
       </section>
 
-      <section class="contact">
-        <h3>Contact</h3>
-        <p class="leading">Textooooooooooooooo</p>
+      <section id="contact" class="contact">
+        <h3>Contact us</h3>
         <form>
           <input type="text" placeholder="Name">
           <input type="text" placeholder="Email">
@@ -77,14 +86,12 @@
           <button class="button">Send</button>
         </form>
       </section>
+    </div>
     </main>
 
     <footer>
        <p class="copyright">Copyright 2021 - Costa Rica</p>
        <ul class="social">
-         <li>
-           <a href=""><img src="./assets/images/fb-icon.svg" alt="fb"></a>
-         </li>
        </ul>
     </footer>
 

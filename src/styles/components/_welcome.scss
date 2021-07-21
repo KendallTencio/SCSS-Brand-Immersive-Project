@@ -1,23 +1,43 @@
+@use "../abstracts/variables";
+@use "../abstracts/breakpoints" as media;
+
 .welcome{
     padding: 0 20px 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-start
+    align-items:flex-start;
+    background: $color-prim;
+
+    &.welcome-text{
+        display: flex;
+        a{
+            display: flex;
+        }
+    }
+
+    @include media.query(">=sm") {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      @include media.query(">=md") {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1060px;
+        margin: 0 auto;
+        width: 100%;
+      }
+  
+      @include media.query(">=lg") {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1060px;
+        margin: 0 auto;
+        width: 100%;
+      }
   }
 
-  .welcome-text{
-//grid-column: 1/6;
-}
-
-.welcome-text a{
-//margin: 20px 0;
-}
-
-.welcome-img{
-//grid-column: 6/9;
-}
-
-.welcome-img img{
-//width: 200%;
-}

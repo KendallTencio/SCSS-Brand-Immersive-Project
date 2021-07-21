@@ -2,16 +2,16 @@
 
 .button{
     background: none;
-    border: 2px solid $color-sec;
-    color: $color-sec;
+    border: 2px solid $color-thi;
+    color: $color-thi;
     padding: 6px 12px;
     border-radius: 10px;
     text-transform: uppercase;
     box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
     display: inline-block;
-}
 
-.button:hover{
-    color: rgb(214, 214, 214);
-    background: $color-sec;
+    &:hover{
+        color: rgb(214, 214, 214);
+        background: $color-thi;
+    }
 }

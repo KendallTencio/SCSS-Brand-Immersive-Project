@@ -1,7 +1,7 @@
 @use "../abstracts/variables";
 
 body{
-    background: $color-prim;
+    background: $color-sec;
     overflow-x: hidden;
     font-family: 'Bebas-Regular';
     box-sizing: border-box;
@@ -12,7 +12,7 @@ body{
     src: url(../../assets/fonts/Bebas-Regular.ttf);
 }
 
-h1,h2,h3,h4{
+h1,h3,h4{
     color: $color-sec;
     font-weight: normal;
 }

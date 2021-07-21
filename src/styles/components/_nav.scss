@@ -1,14 +1,61 @@
+@use "../abstracts/variables";
+@use "../abstracts/breakpoints" as media;
+
+@keyframes crflag{
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 25%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+.cr-text {
+    background-image: linear-gradient(to left, $color-prim, $color-sec, $color-thi, $color-sec, $color-prim);
+    color: transparent;
+    -moz-background-clip: text;
+    background-size: 500% 500%;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: crflag;
+    animation-timing-function: ease-in-out;
+
+}
+  
 .site-nav{
-    margin: 0 20px;
-  }
-  .site-nav h1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-    border-bottom: 3px solid var(--primary);
-  }
-  .site-nav ul{
-    display: none;
-  }
+    background: $color-four;
+
+    h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 3px solid $color-thi;
+    }
+
+    ul{
+        display: none;
+    }
+
+    @include media.query(">=md") {
+        position: fixed;
+        z-index: 2;
+        padding: 0 20px;
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+        li{
+            margin-left: 10px;
+            a:hover{
+                color: $color-thi;
+            }
+        }
+    }
+}
