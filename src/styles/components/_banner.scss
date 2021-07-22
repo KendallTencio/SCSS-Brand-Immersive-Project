@@ -15,21 +15,34 @@
     color: $color-prim-comp;
     text-shadow: 2.2px 2.2px $color-four;
 
+    h2{
+      text-shadow: 3px 3px $color-four;
+    }
+
     @include media.query(">=sm") {
         font-size: 30px;
         background-image: none;
+        h2{
+          text-shadow: 3px 3px $color-four;
+        }
       }
   
     @include media.query(">600px", "<1023px") {
       background-image: url("../../assets/images/CostaRicaMapTrans.svg");
       font-size: 50px;
       text-shadow: 2.2px 2.2px $color-four;
+      h2{
+        text-shadow: 4px 4px $color-four;
+      }
     }
 
     @include media.query(">=md") {
       background-image: url("../../assets/images/CostaRicaMapTrans.svg");
       font-size: 50px;
       text-shadow: 2.2px 2.2px $color-four;
+      h2{
+        text-shadow: 5px 5px $color-four;
+      }
     }
 
     @include media.query(">=lg") {
@@ -45,5 +58,5 @@
     min-width: 100%; 
     min-height: 100%;
     z-index: -1;
-    filter: brightness(60%);
+    filter: brightness(70%);
 }
